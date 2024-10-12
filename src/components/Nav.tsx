@@ -43,7 +43,7 @@ const Nav = () =>{
                     >
                         <Image
                             // aria-hidden
-                            src={pointer} className="pointer" className="pointer"
+                            src={pointer} className="pointer"
                             alt="Window icon"
                             width={16}
                             height={16}

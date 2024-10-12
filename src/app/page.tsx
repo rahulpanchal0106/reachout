@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image";
 import Nav from "../components/Nav";
-import logo from '../assets/logo-nobg.png';
+// import logo from '../assets/logo-nobg.png';
 import bg from "../assets/bg-grid-77.svg"
 import blob from '../assets/bbblurry(1).svg'
-import { ArrowRightAlt, ForkRight, NextPlan, RampRight } from "@mui/icons-material"
+// import { ArrowRightAlt, ForkRight, NextPlan, RampRight } from "@mui/icons-material"
 import pointer from '../assets/pointer-blue.png'
 
 
