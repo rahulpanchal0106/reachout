@@ -5,12 +5,61 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --glow-color: #3180f6; 
+}
+*{
+  transition: all 0.3s ease;
+}
+#spotlight-blue {
+  position: fixed;
+  left: 50%;
+  top: 50%; /* Center the blob */
+  opacity: 0.5; /* Adjust opacity for visibility */
+  animation: move 20s cubic-bezier(0.4, 0, 0.2, 1) infinite; 
+  animation-delay: 0s;
+  mix-blend-mode: screen; /* Use 'screen' to allow background to show through */
+  pointer-events: none; /* Prevent interaction with the blob */
+}
+#rightArrow{
+  margin-left: 0%;
+}
+#nextButton:hover #rightArrow{
+  position: relative;
+  margin-left: 60%;
+  transition: all 0.3s ease;
+}
+a:hover .pointer{
+  transform:rotate(-45deg);
+  filter: drop-shadow(0 0 10px var(--glow-color));
+}
+@keyframes move{
+  0%{
+    
+    transform: translate(-75vw, -75vh) rotate(0deg);
+  }
+
+  25% {
+    
+    transform: translate(-25vw,-10vh) rotate(90deg);
+  }
+
+  50%{
+    
+    transform: translate(0vw, 10vh) rotate(45deg);
+  }
+  75%{
+    transform: translate(-25vw, -10vh) rotate(300deg); 
+  }
+  100%{
+    transform: translate(-75vw, -75vh) rotate(360deg);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --glow-color: #3282f6; 
   }
 }
 
