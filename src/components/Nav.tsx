@@ -14,7 +14,7 @@ const Nav = () =>{
     return(
         <header className="flex w-full flex-row row-start-0 items-center justify-between">
             <div>
-                <img src={logo.src} alt="Reachout logo" width={isWide?130:100}/>
+                <Image src={logo} alt="Reachout logo" width={isWide?130:100}/>
             </div>
 
             {

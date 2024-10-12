@@ -13,7 +13,6 @@
 #spotlight-blue {
   position: fixed;
   left: 50%;
-  top: 50%; /* Center the blob */
   opacity: 0.5; /* Adjust opacity for visibility */
   animation: move 20s cubic-bezier(0.4, 0, 0.2, 1) infinite; 
   animation-delay: 0s;

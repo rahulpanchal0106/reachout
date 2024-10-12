@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Nav from "../components/Nav";
 import logo from '../assets/logo-nobg.png';
-import bg from "../assets/bg-grid.svg"
+import bg from "../assets/bg-grid-77.svg"
 import blob from '../assets/bbblurry(1).svg'
 import { ArrowRightAlt, ForkRight, NextPlan, RampRight } from "@mui/icons-material"
 import pointer from '../assets/pointer-blue.png'
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div style={{
       backgroundImage: `url(${bg.src})`,
-      backgroundSize: 'cover', // Ensure the background covers the entire area
+      backgroundSize: 'fit',
       backgroundPosition: 'center',
     }} className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* <img src={bg.src} alt="" className="fixed top-0  z-10" /> */}
@@ -21,7 +21,7 @@ export default function Home() {
         {/* <img src={logo.src} alt="Next.js logo" width={180} height={38} priority/> */}
 
         <div className="flex flex-col sm:text-8xl text-6xl text-center w-full justify-center items-center">
-          <img src={blob.src} alt="" id="spotlight-blue" className="absolute z-10" />
+          <Image src={blob} alt="" id="spotlight-blue" className="absolute z-10" />
           <h1 className="flex flex-row  mb-4">Focus on Prepping, </h1>
           <h1 className="flex flex-row  mb-4">We do the Applying. </h1>
           
@@ -48,14 +48,16 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col text-center w-full">
-          
+          {/* <h1 className="" >
+            We provide an AI powered automation tool, that Finds and then Applies to the latest jobs aligning with your profile and skill-set.
+          </h1> */}
         </div>
 
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center z-10">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://drive.google.com/file/d/1hhnkf9GcbL0jhEBtQADWwtaYwB-WJim2/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -96,7 +98,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go SetUp!
+          Get Started
         </a>
       </footer>
     </div>
