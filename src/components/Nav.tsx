@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import logo from '../assets/logo-nobg-blue.png';
 import pointer from "../assets/pointer-blue.png"
@@ -12,7 +13,7 @@ const Nav = () =>{
         }
     }, []);
     return(
-        <header className="flex w-full flex-row row-start-0 items-center justify-between">
+        <header className="flex w-full flex-row row-start-0 items-center justify-between px-4 py-3">
             <div>
                 <Image src={logo} alt="Reachout logo" width={isWide?130:100}/>
             </div>
@@ -21,8 +22,8 @@ const Nav = () =>{
                 isWide?
                 <div className="flex flex-row w-2/3 items-center justify-evenly z-10">
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                    className="flex items-center gap-1 hover:gap-3 hover:underline hover:underline-offset-4"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     >
@@ -35,8 +36,8 @@ const Nav = () =>{
                         />
                         Jobs Database
                     </a>
-                    <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    {/* <a
+                    className="flex items-center gap-1 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -49,10 +50,10 @@ const Nav = () =>{
                             height={16}
                         />
                         Your Resume
-                    </a>
+                    </a> */}
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                    className="flex items-center gap-1 hover:gap-3 hover:underline hover:underline-offset-4"
+                    href="/login"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
@@ -63,10 +64,10 @@ const Nav = () =>{
                             width={16}
                             height={16}
                         />
-                        Log Out
+                        Sign In
                     </a>
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    className="flex items-center gap-1 hover:gap-3 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -97,7 +98,7 @@ const Nav = () =>{
             {isMenuOpen && (
                 <div className="flex flex-col w-full items-center justify-center z-10">
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    className="flex items-center gap-1 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -112,7 +113,7 @@ const Nav = () =>{
                         Jobs Database
                     </a>
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    className="flex items-center gap-1 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -127,7 +128,7 @@ const Nav = () =>{
                         Your Resume
                     </a>
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    className="flex items-center gap-1 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -142,7 +143,7 @@ const Nav = () =>{
                         Log Out
                     </a>
                     <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                    className="flex items-center gap-1 hover:underline hover:underline-offset-4"
                     href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                     target="_blank"
                     rel="noopener noreferrer"
