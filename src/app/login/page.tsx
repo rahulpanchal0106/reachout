@@ -8,7 +8,7 @@ export default function Login(){
     
     const handleoAuth= async()=> {
         try{
-            const resp = await axios.get('http://localhost:8080/auth/google')
+            const resp = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/auth/google`)
             console.log("==> ",resp);
             if(resp){
                 const authUrl = resp.data.authUrl;
